@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>rudebega</title>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
-  <script src="rudebega-app.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+  <script src="app.js"></script>
   <link rel="stylesheet" href="css/style.css">
 
   
 </head>
-<body ng-controller="GalleryController">
-    <div class="main-container" >
+<body>
+    <div class="main-container" ng-controller="gallerycontroller" >
 		<div class="nav-container">
 			<div class="nav-link" id="about">About</div>
 			<div class="nav-link" id="custom">Custom</div>
@@ -20,24 +20,16 @@
 		</div>
 
 		<div class="gallery-container">
-			<div class="table">
-<!-- 				
-        <div class="gallery-item" ng-repeat="image in images">
-					<div class="gallery-item-image">{{image.thumbnail}}</div>
-					<div class="gallery-item-text">{{image.description}}</div>
-				</div> 
-      -->
-
-        <li ng-repeat="image in galleryData">
-          <a ng-href="" ng-click="scrollTo(image,$index)">
-            <img class="thumbnail" ng-src="{{IMAGE_LOCATION+image.title}}" />
-          </a>
-        </li>
-			
-
-      </div>
-
+			<div ng-repeat="image in galleryimages">
+				<div class="thumbwrapper">
+					<a ng-href="">
+						<img class="thumbnail" ng-src="images/{{image.image}}" />
+						{{image.title}}
+					</a>
+				</div>
+			</div>
 		</div>
+
 	</div>
 </body>
 </html>
