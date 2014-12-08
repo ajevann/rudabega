@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <title>rudebega</title>
+
+  <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+<body ng-app="app" ng-controller="controller">
+	<div class="body-container">
+	    <div class="main-container">
+			<div class="nav-container">
+				<div class="nav-link" id="about" 	ng-click="loadLink('about')">ABOUT</div>
+				<div class="nav-link" id="custom" 	ng-click="loadLink('custom')">CUSTOM</div>
+				<div class="nav-link" id="cartesia"	ng-click="loadLink('cartesia')">CARTESIA</div>
+				<div class="nav-link" id="journal" 	ng-click="loadLink('journal')">JOURNAL</div>
+			</div>
+
+			<span directive="exp"></span>
+				<div class="content-container">
+					<div class="gallery-container">
+						<div class="gallery-item" ng-repeat="image in imagesCustom">
+							<div ng-click="show(image)">
+								<img class="gallery-item-image" ng-src="images/{{image.image}}" />
+								<div class="gallery-item-text">{{image.title}}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</span>
+		</div>
+	</div>
+</body>
+</html>
