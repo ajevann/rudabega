@@ -14,13 +14,14 @@
 </head>
 <body ng-app="app" ng-controller="controller" ng-click="loadLink('custom')">
 	<span directive="exp">
-		<div id="container">
-			<div id="logo"></div>
-			<div id="mainheader">RUDEBEGA</div>
-			<div id="subheader">DESIGN + FABRICATION</div>
-
-			<img src="images/1385875411ot65c.jpg" alt=""></img>
-		</div>
+		<div ng-include src="template"></div>
 	</span>
+
+	<script type="text/ng-template" id="home.html">
+		//<div>loaded home</div>
+	</script>
+	<script type="text/ng-template" id="home2.html">
+		//<div>loaded home 2</div>
+	</script>
 </body>
 </html>
