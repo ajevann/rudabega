@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="402px" height="502px" viewBox="0 0 402 502" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Group" stroke="#979797">
+            <path d="M101,301 L201,400.5" id="Line"></path>
+            <path d="M101,401 L201,500.5" id="Line"></path>
+            <path d="M101,201 L101,401" id="Line"></path>
+            <path d="M201,401 L201,501" id="Line"></path>
+            <path d="M201,101 L201,201" id="Line"></path>
+            <path d="M301,201 L301,301" id="Line"></path>
+            <path d="M401,101 L401,201" id="Line"></path>
+            <path d="M401,201 L401,301" id="Line"></path>
+            <g id="Line">
+                <path d="M101.5,0.5 L0.5,101.5"></path>
+                <path d="M1,101 L101,200.5"></path>
+                <path d="M101,1 L201,100.5"></path>
+                <path d="M101.5,201 L200.5,101.5"></path>
+            </g>
+            <path d="M101.5,301 L200.5,201" id="Line"></path>
+            <path d="M301.5,301 L400.5,201.5" id="Line"></path>
+            <path d="M301.5,201 L400.5,101.5" id="Line"></path>
+            <path d="M201.5,401 L300.5,301.5" id="Line"></path>
+            <path d="M201.5,501 L300.5,401.5" id="Line"></path>
+            <path d="M301.5,401 L400.5,301.5" id="Line"></path>
+        </g>
+    </g>
+</svg>

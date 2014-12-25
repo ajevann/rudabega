@@ -1,11 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
 body {
-	font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-family: 'Roboto', sans-serif;
 	margin: 0px;
 }
 
 #container {
    width: 100%;
    height: 100%;
+   position: relative;;
 }
 
 #container img {
@@ -21,20 +25,25 @@ body {
 	z-index: 100;
 }
 
-#container #mainheader {
-	margin-left: 20%;
-	margin-top: 5%;
-	font-size: 100px;
+#titles {			
+	width: 65%;
+	height: 50%;
+	margin: auto;
+	position: absolute;
+	top: 300px; left: 0; bottom: 0; right: 0;
+}
+
+#titles #mainheader {
+	font-size: 7em;
 	z-index: 100;
 	position:relative;
 }
 
-#container #subheader {
-	margin-left: 20%;
-	margin-top: -5%;
-	font-size: 50px;
+#titles #subheader {
+	font-size: 3em;
 	z-index: 100;
 	position:relative;
+	left: 6px;
 }
 
 .body-container {
@@ -48,12 +57,24 @@ body {
 }
 
 .nav-container {
+	margin-top: 50px;
+
 	height:100%;
 	width:125px;
 
 	float:left;
 	position: fixed;
-  display:block;
+	display:block;
+}
+
+.nav-link {
+	margin-bottom: 10px;
+
+}
+
+#current {
+	font-size: 2em;
+	margin-bottom: 20px;
 }
 
 .content-container {
@@ -80,9 +101,9 @@ body {
 
 .gallery-item-text {
 	width:100%;
-	height:50px;
+	height:25px;
 	text-align: center;
-	bottom:25px;
+	bottom: 29px;
 	position: relative;
-	background-color: gray;
+	background-color: rgba(190, 190, 190, 0.7);
 }
